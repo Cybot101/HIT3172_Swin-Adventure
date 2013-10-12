@@ -4,7 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>GameObject.h</itemPath>
       <itemPath>IdentifiableObject.h</itemPath>
+      <itemPath>Inventory.h</itemPath>
+      <itemPath>Item.h</itemPath>
+      <itemPath>Player.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -13,7 +17,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>GameObject.cpp</itemPath>
       <itemPath>IdentifiableObject.cpp</itemPath>
+      <itemPath>Inventory.cpp</itemPath>
+      <itemPath>Item.cpp</itemPath>
+      <itemPath>Player.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -27,6 +35,30 @@
         <itemPath>tests/IdentifiableObjectUnitTest.cpp</itemPath>
         <itemPath>tests/IdentifiableObjectUnitTest.h</itemPath>
         <itemPath>tests/newtestrunner.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3"
+                     displayName="InventoryUnitTest"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/InventoryUnitTest.cpp</itemPath>
+        <itemPath>tests/InventoryUnitTest.h</itemPath>
+        <itemPath>tests/InventoryUnitTestRunner.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2"
+                     displayName="ItemUnitTest"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/ItemUnitTest.cpp</itemPath>
+        <itemPath>tests/ItemUnitTest.h</itemPath>
+        <itemPath>tests/newtestrunner1.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4"
+                     displayName="PlayerUnitTest"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/PlayerUnitTestRunner.cpp</itemPath>
+        <itemPath>tests/PlayerUnitTestRunner.h</itemPath>
+        <itemPath>tests/newtestrunner2.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
@@ -47,9 +79,25 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="GameObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GameObject.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="IdentifiableObject.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="IdentifiableObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Inventory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Inventory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Item.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Item.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Player.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Player.h" ex="false" tool="3" flavor2="0">
       </item>
       <folder path="TestFiles/f1">
         <cTool>
@@ -65,6 +113,48 @@
           </linkerLibItems>
         </linkerTool>
       </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f4">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f4</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tests/IdentifiableObjectUnitTest.cpp"
@@ -74,7 +164,25 @@
       </item>
       <item path="tests/IdentifiableObjectUnitTest.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="tests/InventoryUnitTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/InventoryUnitTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/InventoryUnitTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ItemUnitTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ItemUnitTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/PlayerUnitTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/PlayerUnitTestRunner.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="tests/newtestrunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/newtestrunner1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/newtestrunner2.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -98,9 +206,25 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="GameObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GameObject.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="IdentifiableObject.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="IdentifiableObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Inventory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Inventory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Item.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Item.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Player.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Player.h" ex="false" tool="3" flavor2="0">
       </item>
       <folder path="TestFiles/f1">
         <cTool>
@@ -116,6 +240,48 @@
           </linkerLibItems>
         </linkerTool>
       </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f4">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f4</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tests/IdentifiableObjectUnitTest.cpp"
@@ -125,7 +291,25 @@
       </item>
       <item path="tests/IdentifiableObjectUnitTest.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="tests/InventoryUnitTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/InventoryUnitTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/InventoryUnitTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ItemUnitTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ItemUnitTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/PlayerUnitTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/PlayerUnitTestRunner.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="tests/newtestrunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/newtestrunner1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/newtestrunner2.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
