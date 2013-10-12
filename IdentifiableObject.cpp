@@ -24,8 +24,12 @@ string IdentifiableObject::first_id()
 
 bool IdentifiableObject::are_you(string _aId)
 {
+    string tmp = _aId;
+    for (int i = 0; i < _aId.size()-1; i++)
+        tmp[i] = tolower( _aId[i] );
+    
     for (int i=0; i<(_identifiers.size()-1); i++)
-        if (_aId.compare( _identifiers[i] ) == 0)
+        if (_identifiers[i] == tmp )
             return true;
     
     return false;
